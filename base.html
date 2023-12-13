@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Физические Формулы</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    
+  <h1>Формулы по кинематике</h1>
+  <div class="formula-container">
+    <h2>Равномерное движение</h2>
+    <div class="formula" data-tooltip="S - путь [м]
+    v - скорость [м/с]
+    t - время [с]">
+      <p>Путь</p>
+      <div class="equation">S = v · t</div>
+    </div>
+
+    <div class="formula" data-tooltip="x - координата [м]
+    x₀ - начальная координата [м]
+    v - скорость [м/c]
+    t - время [c]">
+      <p>Координата</p>
+      <div class="equation">x = x₀ + v · t</div>
+    </div>
+
+  </div>
+
+
+    <div class="formula-container">
+      <h2>Равномерно ускоренное движение</h2>
+
+      <div class="formula" data-tooltip="v - скорость [м/с]
+      a - ускорение [м/с^2] 
+      t - время [c]">
+        <p>Скорость, ускорение, время</p>
+        <div class="equation">v = a · t</div>
+      </div>
+
+      <div class="formula" data-tooltip ="а - ускорение [м/c^2]
+      v - скорость [м/с]
+      v₀ - начальная скорость [м/с]
+      t - время [с]">
+      <p>Ускорение</p>
+        <div class="equation">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mrow>
+                    <mi>a</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mi>v</mi>
+                            <mo>-</mo>
+                            <mi>v₀</mi>
+                        </mrow>
+                        <mi>t</mi>
+                    </mfrac>
+                </mrow>
+            </math></div>
+      </div>
+
+      <div class="formula" data-tooltip="v - скорость [м/с]
+      v₀ - начальная скорость [м/c]
+      a - ускорение [м/с^2]
+      t - время [с]">
+        <p>Скорость</p>
+        <div class="equation">v = v₀ + a · t</div>
+      </div>
+      <div class="formula" data-tooltip="S - путь [м]
+      v - скорость [м/c]
+      a - ускорение [м/с^2]
+      t - время [с]">
+        <p>Путь</p>
+        <div class="equation">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mi>S</mi>
+              <mo>=</mo>
+              <mi>v</mi>
+              <mo>&#8290;</mo>
+              <mi>t</mi>
+              <mo>+</mo>
+              <mo>(</mo>
+              <mfrac>
+                <mrow>
+                  <mi>a</mi>
+                  <mo>&#8290;</mo>
+                  <msup>
+                    <mi>t</mi>
+                    <mn>2</mn>
+                  </msup>
+                </mrow>
+                <mn>2</mn>
+              </mfrac>
+              <mo>)</mo>
+            </mrow>
+          </math>
+        </div>
+      </div>
+
+      <div class="formula" data-tooltip="x - координата [м]
+      x₀ - начальная координата [м]
+      v - скорость [м/с]
+      a - ускорение [м/с^2]
+      t - время [с]">
+        <p>Координата</p>
+        <div class="equation">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mi>x</mi>
+              <mo>=</mo>
+              <mi>x₀</mi>
+              <mo>+</mo>
+              <mi>v</mi>
+              <mo>&#8290;</mo>
+              <mi>t</mi>
+              <mo>+</mo>
+              <mo>(</mo>
+              <mfrac>
+                <mrow>
+                  <mi>a</mi>
+                  <mo>&#8290;</mo>
+                  <msup>
+                    <mi>t</mi>
+                    <mn>2</mn>
+                  </msup>
+                </mrow>
+                <mn>2</mn>
+              </mfrac>
+              <mo>)</mo>
+            </mrow>
+          </math>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="formula-container">
+      <h2>Вертикальное движение</h2>
+
+      <div class="formula" data-tooltip="v - скорость [м/с]
+      g - ускорение свободного падения [м/с^2]
+      t - время [c]">
+        <p>Скорость свободно падающего тела</p>
+        <div class="equation">v = g · t</div>
+      </div>
+
+      <div class="formula" data-tooltip="v - скорость [м/с]
+      v₀ - начальная скорость [м/с^2]
+      g - ускорение свободного падения [м/с^2]
+      t - время [c]">
+        <p>Скорость тела, брошенного вертикально вверх/вниз</p>
+        <div class="equation">v = v₀ - g · t</div>
+      </div>
+
+      <div class="formula" data-tooltip="h - координата [м]
+      h₀ - начальная координата [м]
+      v₀ - начальная скорость [м/с]
+      g - ускорение свободного падения [м/с^2]
+      t - время [c]">
+        <p>Высота тела, брошенного вертикально вверх/вниз</p>
+        <div class="equation">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mi>h</mi>
+              <mo>=</mo>
+              <mi>h₀</mi>
+              <mo>+</mo>
+              <mi>v₀</mi>
+              <mo>&#8290;</mo>
+              <mi>t</mi>
+              <mo>-</mo>
+              <mo>(</mo>
+              <mfrac>
+                <mrow>
+                  <mi>g</mi>
+                  <mo>&#8290;</mo>
+                  <msup>
+                    <mi>t</mi>
+                    <mn>2</mn>
+                  </msup>
+                </mrow>
+                <mn>2</mn>
+              </mfrac>
+              <mo>)</mo>
+            </mrow>
+          </math>
+          
+        </div>
+      </div>
+
+    </div>
+
+    <div class="formula-container">
+      <h2>Круговое движение</h2>
+
+
+      <div class="formula-container">
+        <h4>Центростремительное ускорение</h4>
+
+      <div class="formula" data-tooltip="a - центростремительное ускорение [м/с^2]
+      v - скорость [м/с]
+      R - радиус [м]">
+        <p>Через линейную скорость</p>
+        <div class="equation">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mi>a</mi>
+              <mo>=</mo>
+              <mfrac>
+                <msup>
+                  <mi>v</mi>
+                  <mn>2</mn>
+                </msup>
+                <mi>R</mi>
+              </mfrac>
+            </mrow>
+          </math>
+        </div>
+      </div>
+
+      <div class="formula" data-tooltip="a - центростремительное ускорение [м/с^2]
+      T - период [с]
+      R - радиус [м]">
+        <p>Через период вращения</p>
+        <div class="equation">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mi>a</mi>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <mn>4</mn>
+                  <mo>&#960;</mo>
+                  <msup>
+                    <mi>R</mi>
+                    <mn>2</mn>
+                  </msup>
+                </mrow>
+                <msup>
+                  <mi>T</mi>
+                  <mn>2</mn>
+                </msup>
+              </mfrac>
+            </mrow>
+          </math>          
+        </div>
+      </div>
+      
+      <div class="formula" data-tooltip="a - центростремительное ускорение [м/с^2]
+      ν - частота [с]
+      R - радиус [м]">
+        <p>Через частоту вращения</p>
+        <div class="equation">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mi>a</mi>
+              <mo>=</mo>
+              <mn>4</mn>
+              <mo>&#8290;</mo>
+              <mi>&#960;</mi>
+              <msup>
+                <mi>R</mi>
+                <mn>2</mn>
+              </msup>
+              <mo>&#8290;</mo>
+              <msup>
+                <mi>v</mi>
+                <mn>2</mn>
+              </msup>
+            </mrow>
+          </math>                    
+        </div>
+      </div>
+
+      <div class="formula" data-tooltip="a - центростремительное ускорение [м/с^2]
+      w - угловая скорость [рад/с]
+      R - радиус [м]">
+        <p>Через угловую скорость</p>
+        <div class="equation">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mi>a</mi>
+              <mo>=</mo>
+              <msup>
+                <mi>ω</mi>
+                <mn>2</mn>
+              </msup>
+              <mo>&#8290;</mo>
+              <mi>R</mi>
+            </mrow>
+          </math>
+                              
+        </div>
+      </div>
+
+      </div>
+
+      <div class="formula-container">
+        <h4>Остальные формулы</h4>
+        <div class="formula" data-tooltip="ω - Угловая скорость [рад/с]
+        φ - угол [рад]
+        t - время [с]">
+          <p>Угловая скорость</p>
+          <div class="equation">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mi>ω</mi>
+                <mo>=</mo>
+                <mfrac>
+                  <mi>φ</mi>
+                  <mi>t</mi>
+                </mfrac>
+              </mrow>
+            </math>
+            
+            
+          </div>
+        </div>
+
+        <div class="formula" data-tooltip="l - длина дуги окружности [м]
+        φ - угол [рад]
+        R - радиус [м]">
+          <p>Равномерное круговое движение</p>
+          <div class="equation"> l = R · φ
+          </div>
+        </div>
+
+        <div class="formula" data-tooltip="v - линейная скорость [м/с]
+        ω - угловая скорость [рад/с]
+        R - радиус [м]">
+          <p>Линейная скорость</p>
+          <div class="equation"> v = R · ω
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="formula-container">
+      <h2>Периоды и частоты</h2>
+
+      <div class="formula" data-tooltip="T - период [c]
+      t - время [c]
+      N - число вращений [ед]">
+        <p>Период через число вращений</p>
+        <div class="equation">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mi>T</mi>
+              <mo>=</mo>
+              <mfrac>
+                <mi>t</mi>
+                <mi>N</mi>
+              </mfrac>
+            </mrow>
+          </math>
+        </div>
+      </div>
+
+      <div class="formula" data-tooltip="T - период [c]
+      R - радиус [м]
+      v - линейная скорость [м/с]">
+        <p>Период через линейную скорость</p>
+        <div class="equation">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mi>T</mi>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <mn>2</mn>
+                  <mo>&#960;</mo>
+                  <mi>R</mi>
+                </mrow>
+                <mi>v</mi>
+              </mfrac>
+            </mrow>
+          </math>
+        </div>
+      </div>
+
+      <div class="formula" data-tooltip="T - период [c]
+      ω - угловая скорость [рад/с]">
+        <p>Период через угловую скорость</p>
+        <div class="equation">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mi>T</mi>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <mn>2</mn>
+                  <mo>&#960;</mo>
+                  <mi></mi>
+                </mrow>
+                <mi>ω</mi>
+              </mfrac>
+            </mrow>
+          </math>
+        </div>
+      </div>
+
+
+      <div class="formula" data-tooltip="ν - частота вращения [c^-1]
+      T - период вращения [с]">
+        <p>Частота вращения</p>
+        <div class="equation">
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mi>ν</mi>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <mn>1</mn>
+                </mrow>
+                <mi>T</mi>
+              </mfrac>
+            </mrow>
+          </math>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="formula-container">
+      <h2>Баллистика</h2>
+
+      <div class="formula-container">
+        <h4>Тело брошенно под углом</h4>
+
+        <div class="formula" data-tooltip="v₀_x - скорость по горизонтали [м/с]
+        v₀_x - скорость по вертикали [м/с]
+        v₀ - начальная скорость [м/с]
+        a - угол к горизонту [рад]">
+          <p>Стартовая скорость по осям</p>
+          <div class="equation">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <msub>
+                  <mi>v</mi>
+                  <mi>0x</mi>
+                </msub>
+                <mo>=</mo>
+                <mi>v₀</mi>
+                <mo>&#8290;</mo>
+                <mi>cos</mi>
+                <mo>&#8290;</mo>
+                <mo>(</mo>
+                <mi>a</mi>
+                <mo>)</mo>
+              </mrow>
+            </math>
+          </div>
+
+          <div class="equation">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <msub>
+                  <mi>v</mi>
+                  <mi>0y</mi>
+                </msub>
+                <mo>=</mo>
+                <mi>v₀</mi>
+                <mo>&#8290;</mo>
+                <mi>sin</mi>
+                <mo>&#8290;</mo>
+                <mo>(</mo>
+                <mi>a</mi>
+                <mo>)</mo>
+              </mrow>
+            </math>
+          </div>
+      
+      </div>
+
+        <div class="formula" data-tooltip="L - дальность полета [м]
+        v₀ - начальная скорость [м/с]
+        t - время [c]
+        a - угол к горизонту [рад]">
+          <p>Дальность броска тела</p>
+          <div class="equation">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mi>L</mi>
+                <mo>=</mo>
+                <mi>v₀</mi>
+                <mo>&#8290;</mo>
+                <mi>t</mi>
+                <mo>&#8290;</mo>
+                <mi>cos</mi>
+                <mo>&#8290;</mo>
+                <mo>(</mo>
+                <mi>a</mi>
+                <mo>)</mo>
+              </mrow>
+            </math>
+            
+          </div>
+        </div>
+
+        <div class="formula" data-tooltip="h - высота полета [м]
+        v₀ - начальная скорость [м/с]
+        t - время [c]
+        a - угол к горизонту [рад]
+        g - ускорение свободного падения [м/с^2]">
+          <p>Высота подъема тела</p>
+          <div class="equation">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mi>h</mi>
+                <mo>=</mo>
+                <mi>v₀</mi>
+                <mo>&#8290;</mo>
+                <mi> t</mi>
+                <mo>&#8290;</mo>
+                <mi>sin</mi>
+                <mo>&#8290;</mo>
+                <mo>(</mo>
+                <mi>a</mi>
+                <mo>)</mo>
+                <mo>-</mo>
+                <mo></mo>
+                <mfrac>
+                  <mrow>
+                    <mi>g</mi>
+                    <mo>&#8290;</mo>
+                    <msup>
+                      <mi>t</mi>
+                      <mn>2</mn>
+                    </msup>
+                  </mrow>
+                  <mn>2</mn>
+                </mfrac>
+                <mo></mo>
+              </mrow>
+            </math>
+          </div>
+        </div>
+
+        <div class="formula" data-tooltip="h - высота полета [м]
+        v₀ - начальная скорость [м/с]
+        t - время [c]
+        a - угол к горизонту [рад]
+        g - ускорение свободного падения [м/с^2]">
+          <p>Вертикальная скорость тела</p>
+          <div class="equation">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <msub>
+                  <mi>v</mi>
+                  <mi>y</mi>
+                </msub>
+                <mo>=</mo>
+                <mi>v₀ </mi>
+                <mo>&#8290;</mo>
+                <mi>sin</mi>
+                <mo>&#8290;</mo>
+                <mo>(</mo>
+                <mi>a</mi>
+                <mo>)</mo>
+                <mo>-</mo>
+                <mi>g</mi>
+                <mo>&#8290;</mo>
+                <mi>t</mi>
+              </mrow>
+            </math>
+            
+          </div>
+        </div>
+
+        <div class="formula" data-tooltip="h - макс. высота подъема [м]
+        v₀ - начальная скорость [м/с]
+        a - угол к горизонту [рад]
+        g - ускорение свободного падения [м/с^2]">
+          <p>Максимальная высота подъема тела</p>
+          <div class="equation">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <msub>
+                  <mi>h</mi>
+                  <mi>макс</mi>
+                </msub>
+                <mo>=</mo>
+                <mfrac>
+                  <mrow>
+                    <msup>
+                      <mi>v₀</mi>
+                      <mn>2</mn>
+                    </msup>
+                    <mo>&#8290;</mo>
+                    <msup>
+                      <mi>sin</mi>
+                      <mo>&#8290;</mo>
+                      <mo>(</mo>
+                      <mi>a</mi>
+                      <mo>)</mo>
+                      <mn>2</mn>
+                    </msup>
+                  </mrow>
+                  <mrow>
+                    <mn>2</mn>
+                    <mi>g</mi>
+                  </mrow>
+                </mfrac>
+              </mrow>
+            </math>
+            
+          </div>
+        </div>
+
+        <div class="formula" data-tooltip="t - время полета [м]
+        v₀ - начальная скорость [м/с]
+        a - угол к горизонту [рад]
+        g - ускорение свободного падения [м/с^2]">
+          <p>Время полета тела</p>
+          <div class="equation">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mi>t</mi>
+                <mo>=</mo>
+                <mfrac>
+                  <mrow>
+                    <mn>2</mn>
+                    <mo>&#8290;</mo>
+                    <mi>v₀</mi>
+                    <mo>&#8290;</mo>
+                    <mi>sin</mi>
+                    <mo>&#8290;</mo>
+                    <mo>(</mo>
+                    <mi>a</mi>
+                    <mo>)</mo>
+                  </mrow>
+                  <mi>g</mi>
+                </mfrac>
+              </mrow>
+            </math>          
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="formula-container">
+        <h4>Тело брошенно горизонтально</h4>
+
+        <div class="formula" data-tooltip="x - координата [м]
+        x₀ - начальная координата [м]
+        v - скорость [м/с]
+        t - время [с]">
+          <p>Дальность броска тела</p>
+          <div class="equation">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mi>x</mi>
+                <mo>=</mo>
+                <mi>x₀</mi>
+                <mo>+</mo>
+                <mi>v</mi>
+                <mo>&#8290;</mo>
+                <mi>t</mi>
+              </mrow>
+            </math>                 
+            
+          </div>
+        </div>
+        
+        <div class="formula" data-tooltip="y - координата [м]
+        y₀ - начальная координата [м]
+        g - ускорение свободного падения [м/с^2]
+        t - время [с]">
+          <p>Высота подъема тела</p>
+          <div class="equation">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mi>y</mi>
+                <mo>=</mo>
+                <mi>y₀</mi>
+                <mo>-</mo>
+                <mo></mo>
+                <mfrac>
+                  <mrow>
+                    <mi>g</mi>
+                    <mo>&#8290;</mo>
+                    <msup>
+                      <mi>t</mi>
+                      <mn>2</mn>
+                    </msup>
+                  </mrow>
+                  <mn>2</mn>
+                </mfrac>
+                <mo></mo>
+              </mrow>
+            </math>                             
+            
+          </div>
+        </div>
+
+        <div class="formula" data-tooltip="h - высота [м]
+        g - ускорение свободного падения [м/с^2]
+        t - время [с]">
+          <p>Общее время движения тела</p>
+          <div class="equation">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <msub>
+                  <mi>t</mi>
+                  <mi>макс</mi>
+                </msub>
+                <mo>=</mo>
+                <msqrt>
+                  <mfrac>
+                    <mrow>
+                      <mn>2</mn>
+                      <mo>&#8290;</mo>
+                      <mi>h</mi>
+                    </mrow>
+                    <mi>g</mi>
+                  </mfrac>
+                </msqrt>
+              </mrow>
+            </math>                                        
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer">
+      <h2> </h2>
+      <h2> </h2>
+      <h2>Спасибо за изучение формул!</h2>
+    </div>
+
+
+  
+</div>
+</body>
+<footer>
+  <div class="end-text">
+    <p></p>
+    <p> Выполнил Панов Олег 2023</p>
+    <a href="https://github.com" class="footer-link">Github проекта</a>
+  </div>
+</footer>
+</html>
